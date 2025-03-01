@@ -1,5 +1,10 @@
 import React from "react";
 import { FiMoreHorizontal } from "react-icons/fi";
+import { FaRegComment } from "react-icons/fa";
+import { FaRetweet } from "react-icons/fa";
+import { CiHeart } from "react-icons/ci";
+import { MdOutlineFileUpload } from "react-icons/md";
+import { FiBarChart2 } from "react-icons/fi";
 import Link from "next/link";
 
 function Tweet() {
@@ -22,8 +27,30 @@ function Tweet() {
             <FiMoreHorizontal />
           </div>
         </div>
-        <div></div>
-        <div></div>
+        <div>
+          You are amazing if you take time to comment on a tweet or YouTube
+          video or a blogpost that has helped you! 🙌
+        </div>
+        <div className="flex justify-between">
+          <div className="flex items-center mt-2">
+            <FaRegComment className="mr-2 text-gray-600" />
+            <span className="text-gray-600">20</span>
+          </div>
+          <div className="flex items-center mt-2">
+            <FaRetweet className="mr-2 text-gray-600" />
+            <span className="text-gray-600">17</span>
+          </div>
+          <div className="flex items-center mt-2">
+            <CiHeart className="mr-2 text-gray-600" />
+            <span className="text-gray-600">215</span>
+          </div>
+          <div className="flex items-center mt-2">
+            <MdOutlineFileUpload className="mr-2 text-gray-600" />
+          </div>
+          <div className="flex items-center mt-2">
+            <FiBarChart2 className="mr-2 text-gray-600" />
+          </div>
+        </div>
       </div>
     </div>
   );
